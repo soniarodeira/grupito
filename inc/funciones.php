@@ -25,8 +25,8 @@ function mostrarProductos($productos){
 	foreach($productos as $producto){
 ?>
   <div class="col mb-4">
-    <div class="card">
-      <img src="imagenes/spa.jpg" class="card-img-top" alt="Invernalia">
+    <div class="card h-100">
+      <img src="imagenes/<?php echo $producto["imagen"]; ?>" class="card-img-top" alt="<?php echo $producto["nombre"]; ?>">
       <div class="card-body">
         <h5 class="card-title"><?php echo $producto["nombre"]; ?></h5>
         <p class="card-text"><?php echo $producto["introDescripcion"]; ?></p>
