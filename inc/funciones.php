@@ -44,6 +44,17 @@ function mostrarProductos($productos){
 }  /* Función mostrarProductos */
 ?>
 
+<?php 
+function mostrarMensaje($mensaje){
+?>
+	<div class="jumbotron">
+		<div class="container">
+			<h1 class="display-5 "><?php echo $mensaje; ?></h1>
+        </div>
+    </div>	
+<?php
+}
+?>
 
 
 
